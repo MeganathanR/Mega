@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int n, reversedNumber = 0, remainder;
+    int n, revnum = 0, rem;
     scanf("%d", &n);
     while(n != 0)
     {
-        remainder = n%10;
-        reversedNumber = reversedNumber*10 + remainder;
+        rem = n%10;
+        revnum = revnum*10 + rem;
         n /= 10;
     }
-    printf("%d", reversedNumber);
+    printf("%d", revnum);
     return 0;
 }
